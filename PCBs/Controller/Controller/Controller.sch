@@ -91,7 +91,7 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_Dual SW2
+L Buttons:SW_Push_Dual SW2
 U 1 1 5C5121E4
 P 4250 3450
 F 0 "SW2" H 4250 3735 50  0000 C CNN
@@ -102,7 +102,7 @@ F 3 "" H 4250 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_Dual SW1
+L Buttons:SW_Push_Dual SW1
 U 1 1 5C512256
 P 4150 4150
 F 0 "SW1" H 4150 4435 50  0000 C CNN
@@ -947,4 +947,14 @@ Text GLabel 1300 6350 0    50   Input ~ 0
 GND
 Text GLabel 1900 6350 2    50   Input ~ 0
 D10
+Wire Wire Line
+	4050 3650 4050 3450
+Wire Wire Line
+	4450 3650 4450 3450
+Connection ~ 4450 3450
+Wire Wire Line
+	4350 4350 4350 4150
+Connection ~ 4350 4150
+Wire Wire Line
+	3950 4350 3950 4150
 $EndSCHEMATC
