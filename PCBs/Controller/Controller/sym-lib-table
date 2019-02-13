@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Controller-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Controller-eagle-import.lib)(options "")(descr ""))
+  (lib (name Controller-rescue)(type Legacy)(uri ${KIPRJMOD}/Controller-rescue.lib)(options "")(descr ""))
 )

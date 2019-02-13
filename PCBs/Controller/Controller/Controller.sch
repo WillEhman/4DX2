@@ -50,17 +50,6 @@ F 3 "" H 8300 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RF:NRF24L01_Breakout U24L2
-U 1 1 5C511EB3
-P 10750 4350
-F 0 "U24L2" H 11228 4328 50  0000 L CNN
-F 1 "NRF24L01_Breakout" H 11228 4237 50  0000 L CNN
-F 2 "RF_Module:nRF24L01_Breakout" H 10900 4950 50  0001 L CIN
-F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 10750 4250 50  0001 C CNN
-	1    10750 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:LF33_TO220 U2
 U 1 1 5C512026
 P 1750 1350
@@ -83,7 +72,7 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7
 	1    0    0    -1  
 $EndComp
 $Comp
-L Buttons:SW_Push_Dual SW2
+L Controller-rescue:SW_Push_Dual-Buttons SW2
 U 1 1 5C5121E4
 P 4250 3450
 F 0 "SW2" H 4250 3735 50  0000 C CNN
@@ -94,7 +83,7 @@ F 3 "" H 4250 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Buttons:SW_Push_Dual SW1
+L Controller-rescue:SW_Push_Dual-Buttons SW1
 U 1 1 5C512256
 P 4150 4150
 F 0 "SW1" H 4150 4435 50  0000 C CNN
@@ -162,7 +151,7 @@ F 3 "" H 9850 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Potentiometers:P090S U4
+L Controller-rescue:P090S-Potentiometers U4
 U 1 1 5C51439A
 P 7650 3000
 F 0 "U4" H 8077 3201 50  0000 L CNN
@@ -173,7 +162,7 @@ F 3 "" H 7650 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Potentiometers:PTA4543 U3
+L Controller-rescue:PTA4543-Potentiometers U3
 U 1 1 5C51450A
 P 7550 3900
 F 0 "U3" H 7928 4101 50  0000 L CNN
@@ -184,7 +173,7 @@ F 3 "" H 7700 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ATMega:ATmega328P-PU-DIP28 U7
+L Controller-rescue:ATmega328P-PU-DIP28-ATMega U7
 U 1 1 5C525263
 P 6150 3300
 F 0 "U7" H 6200 4100 50  0000 C CNN
@@ -375,8 +364,6 @@ Wire Wire Line
 Connection ~ 2950 1200
 Text GLabel 10200 2900 1    50   Input ~ 0
 3V3
-Text GLabel 10750 4950 3    50   Input ~ 0
-GND
 Wire Wire Line
 	5650 300  6200 300 
 NoConn ~ 6750 650 
@@ -438,16 +425,6 @@ Text GLabel 7400 3750 0    50   Input ~ 0
 A0
 Text GLabel 7500 2850 0    50   Input ~ 0
 A1
-Text GLabel 10250 4650 0    50   Input ~ 0
-D8
-Text GLabel 10250 4550 0    50   Input ~ 0
-D7
-Text GLabel 10250 4250 0    50   Input ~ 0
-D13
-Text GLabel 10250 4150 0    50   Input ~ 0
-D12
-Text GLabel 10250 4050 0    50   Input ~ 0
-D11
 Text GLabel 7800 950  0    50   Input ~ 0
 A2
 Text GLabel 7800 1350 0    50   Input ~ 0
@@ -542,10 +519,6 @@ Wire Wire Line
 	9300 4200 9300 3300
 Wire Wire Line
 	9300 3300 10100 3300
-Wire Wire Line
-	10300 3300 10300 3750
-Wire Wire Line
-	10300 3750 10750 3750
 $Comp
 L Connector:Conn_01x06_Male J1
 U 1 1 5C562D97
@@ -756,8 +729,6 @@ F 3 "~" H 1750 3300 50  0001 C CNN
 $EndComp
 Text GLabel 9300 3650 0    50   Input ~ 0
 RF1
-Text GLabel 10300 3550 0    50   Input ~ 0
-RF2
 Text GLabel 1900 3300 2    50   Input ~ 0
 RF1
 Text GLabel 1900 3600 2    50   Input ~ 0
