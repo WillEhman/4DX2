@@ -3858,7 +3858,7 @@
   )
 
   (gr_arc (start 215.9 123.19) (end 215.9 125.73) (angle -90) (layer Edge.Cuts) (width 0.15))
-  (gr_text "4DX2 Controller Rev 1.2" (at 156.845 77.47) (layer F.SilkS)
+  (gr_text "4DX2 Controller Rev 1.3" (at 156.845 77.47) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text "Board made by Will Ehman" (at 156.972 83.82) (layer F.SilkS)

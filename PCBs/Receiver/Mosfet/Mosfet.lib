@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 4N0400
+#
+DEF 4N0400 Q 0 40 Y Y 1 F N
+F0 "Q" 0 0 50 H V C CNN
+F1 "4N0400" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 5 0 1 0 -150 -50 -150 -750 100 -750 100 -50 -150 -50 N
+X Gate 1 -200 -100 100 R 50 50 1 1 P
+X Source 2 -200 -200 100 R 50 50 1 1 P
+X Source 3 -200 -300 100 R 50 50 1 1 P
+X Drain 4 150 -400 100 L 50 50 1 1 P
+X Source 5 -200 -500 100 R 50 50 1 1 P
+X Source 6 -200 -600 100 R 50 50 1 1 P
+X Source 7 -200 -700 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
